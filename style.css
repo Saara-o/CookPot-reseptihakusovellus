@@ -1,0 +1,124 @@
+body {
+    background-color: #FAF9F6;
+    color: #5a4741;
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+#header {
+    background-color: #ff7d27;
+}
+
+h1 {
+    color: #F5F5F5;
+    padding: 80px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hakuBtn {
+    padding: 14px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.search-icon {
+    color: #9CAF88;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.hakukentta {
+    color: #9CAF88;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    max-width: 300px;
+    font-size: large;
+    margin: 6px;
+    text-align: center;
+}
+
+.hakuwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+#tulokset {
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    #tulokset {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.reseptikortti {
+    background-color: #fff;
+    color: #394132;
+    border: 1px solid #9caf88bb;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+.reseptikortti img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.reseptikortti h3 {
+    font-family: "Playfair Display", serif;
+    padding: 8px;
+    margin: 0px;
+}
+.reseptikortti p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+footer {
+    margin-top: 40px;
+    position: sticky;
+    bottom: 0px;
+    padding: 5px;
+}
+
+footer p {
+    margin-bottom: -2px;
+}
