@@ -8,8 +8,10 @@ Linkki julkaistuun sovellukseen: [CookPot](https://cookpotapp.netlify.app/)
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Minulla oli hauskaa sovelluksen suunnittelun ja rakentamisen kanssa, ja olen tyytyväinen omaan projektiini, sillä minulla oli ajatuksena rakentaa omaan käyttööni reseptihakusovellus, jota voisin käyttää arkielämässä. Koen, että onnistuin luomaan helppokäyttöisen hakusovelluksen selkeällä käyttöliittymällä.
+
 Oma osaamiseni on kehittynyt paljon projektin aikana varsinkin API-kutsun tekemisen ja jQueryn käyttämisen osalta, vaikkakin molemmissa on vielä paljon kehittymisen varaa. Oli haasteellista käyttää Axios-kutsua kun AJAX-kutsun tekeminen oli vielä opetteluvaiheessa. jQueryn osalta oli minulla haasteita tehdä click-tapahtuma, koska en aluksi tajunnut, että minun kannattaa lisätä button-elementtiin data-attribuutti, jonka avulla saan tehtyä jQueryllä tapahtuman.
 Olisin voinut käyttää projektissa enemmän JavaScript-kirjastoja ulkosasun muokkaamiseen ja efekteihin, mutta olin muotoillut tehnyt jo CSS:llä, kun tämän tajusin, eikä aikaa enää riittänyt etsimään ja oppimaan kirjastojen käyttöä sekä korvaamaan jo tehdyt muokkaukset.
+
 Antaisin itselleni prokjektista 4/5.
 
 ## Sisällysluettelo
