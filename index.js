@@ -1,9 +1,14 @@
 // Oletuksena haetaan reseptin nimen mukaan
 let hakutyyppi = "strMeal"
 
-// Palautetaan tallennetut tulokset
+// Palautetaan tallennetut tulokset ja kategoria
 $(document).ready(function(){
-    let tallennettu = localStorage.getItem("tulokset");
+    let tallennettu = sessionStorage.getItem("tulokset");
+    let tallennettukategoria = sessionStorage.getItem("kategoria")
+
+    if(tallennettukategoria) {
+        $(".hakutyyppiBtn[data-kategoria='" + tallennettukategoria + "']").addClass("active");
+    }
 
     if(tallennettu) {
         let meals = JSON.parse(tallennettu);
@@ -38,14 +43,17 @@ $(document).ready(function() {
             // Tyhjennetään tulokset, kun painike ei ole enää aktiivinen
             $("#tulokset").empty();
             // Poistetaan myös tallennetut
-            localStorage.removeItem("tulokset");
-            localStorage.removeItem("kategoria");
+            sessionStorage.removeItem("tulokset");
+            sessionStorage.removeItem("kategoria");
             return;
         
         // Muuten vaihdetaan aktiivinen painike
         } else {
             $(".hakutyyppiBtn").removeClass("active");
             $(this).addClass("active");
+
+            // Tallennetaan aktiivinen näppäin sessionStorageen
+            sessionStorage.setItem("kategoria", kategoria);
         }
         
         // Luodaan URL kategorioihin
@@ -86,11 +94,11 @@ $(document).ready(function() {
                     `);
                 }
 
-                // Poistetaan vanhat tulokset localStoragesta
-                localStorage.removeItem("tulokset");
+                // Poistetaan vanhat tulokset sessionStoragesta
+                sessionStorage.removeItem("tulokset");
 
-                // Tallennetaan tulokset localStorageen
-                localStorage.setItem("tulokset", JSON.stringify(data.meals));
+                // Tallennetaan tulokset sessionStorageen
+                sessionStorage.setItem("tulokset", JSON.stringify(data.meals));
             })
 
             .catch((error) => {
@@ -161,8 +169,8 @@ $(document).ready(function() {
                         `);
                     }
 
-                    // Tallennetaan tulokset localStorageen
-                    localStorage.setItem("tulokset", JSON.stringify(data.meals));
+                    // Tallennetaan tulokset sessionStorageen
+                    sessionStorage.setItem("tulokset", JSON.stringify(data.meals));
                 })
 
                 .catch((error) => {

@@ -4,12 +4,12 @@ Tekijä: Saara Orvas
 ## Verkkolinkit
 Linkki videoesittelyyn:
 
-Linkki julkaistuun APIin: [CookPot]
+Linkki julkaistuun sovellukseen: [CookPot](https://cookpotapp.netlify.app/)
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Minulla oli hauskaa sovelluksen suunnittelun ja rakentamisen kanssa, ja olen tyytyväinen omaan projektiini, sillä minulla oli ajatuksena rakentaa omaan käyttööni reseptihakusovellus, jota voisin käyttää arkielämässä. Koen, että onnistuin luomaan helppokäyttöisen hakusovelluksen selkeällä käyttöliittymällä.
-Oma osaamiseni on kehittynyt paljon projektin aikana varsinkin API-kutsun tekemisen ja jQueryn käyttämisen osalta, vaikkakin molemmissa on vielä paljon kehittymisen varaa. Oli haasteellista käyttää Axios-kutsua kun AJAX-kutsun tekeminen oli vielä opetteluvaiheessa. jQueryn osalta oli minulla haasteita tehdä click-tapahtuma, koska en aluksi tajunnut, että minun kannattaa lisätä näppäin-elementtiin data-attribuutti, jonka avulla saan tehtyä jQueryllä tapahtuman.
-Olisin voinut käyttää projektissa enemmän JavaScript-kirjastoja ulkosasun muokkaamiseen ja efekteihin, mutta olin muotoillut tehnyt jo CSS:llä, kun tämän tajusin, eikä aikaa enää riittänyt etsimään ja oppimaan kirjastojen käyttöä sekä korvaamaan jo tehdyt muokkaukset. 
+Oma osaamiseni on kehittynyt paljon projektin aikana varsinkin API-kutsun tekemisen ja jQueryn käyttämisen osalta, vaikkakin molemmissa on vielä paljon kehittymisen varaa. Oli haasteellista käyttää Axios-kutsua kun AJAX-kutsun tekeminen oli vielä opetteluvaiheessa. jQueryn osalta oli minulla haasteita tehdä click-tapahtuma, koska en aluksi tajunnut, että minun kannattaa lisätä button-elementtiin data-attribuutti, jonka avulla saan tehtyä jQueryllä tapahtuman.
+Olisin voinut käyttää projektissa enemmän JavaScript-kirjastoja ulkosasun muokkaamiseen ja efekteihin, mutta olin muotoillut tehnyt jo CSS:llä, kun tämän tajusin, eikä aikaa enää riittänyt etsimään ja oppimaan kirjastojen käyttöä sekä korvaamaan jo tehdyt muokkaukset.
 Antaisin itselleni prokjektista 4/5.
 
 ## Sisällysluettelo
@@ -36,7 +36,7 @@ Projektin toteutuksessa on käytetty seuraavia teknologioita:
 - HTML: Käyttöliittymän rakenteen luominen
 - CSS: Ulkoasun, värien ja responsiivisuuden hallinta
 - Bootstrap: Responsiivinen ulkoasu ja käyttöliittymän muotoilu
-- JavaScript: Sovelluslogiikka ja localStoragen tallennukset ja poisto
+- JavaScript: Sovelluslogiikka ja sessionStoragen tallennukset ja poisto
 - Axios: Tiedonhaku ulkoisesta rajapinnasta
 - jQuery: DOM-scriptaus ja tapahtumat
 - Google Fonts: Hakukentän kuvakkeen esittäminen, fontit ja nuoli-kuvake.
@@ -48,7 +48,7 @@ Projektin toteutuksessa on käytetty seuraavia teknologioita:
 
 TAI
 
-Mene [linkistä]() julkaistuun sovellukseen, jolloin repositorion lataaminen ei ole tarpeen.
+Mene [linkistä](https://cookpotapp.netlify.app/) julkaistuun sovellukseen, jolloin repositorion lataaminen ei ole tarpeen.
 
 ## Kiitokset
 Projektin toteutuksess hyödynnettiin seuraavia lähteitä:
@@ -59,7 +59,7 @@ Projektin toteutuksess hyödynnettiin seuraavia lähteitä:
 - [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:search:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%25231f1f1f)
 - [Mika Stenberg - Gitbook](https://mika-stenberg.gitbook.io/web-sovelluksia-javascriptin-avulla/jquery/dom-skriptaus)
 
-Projektin kehityksessä on hyödynnetty Microsoft Copilotia erityisesti jQuery-toiminnallisuuksien sekä localStorageen tallentamisen ja poistamisen toteutuksessa.
+Projektin kehityksessä on hyödynnetty Microsoft Copilotia erityisesti jQuery-toiminnallisuuksien sekä sessionStorageen tallentamisen ja poistamisen toteutuksessa.
 
 ## Lisenssi
 
